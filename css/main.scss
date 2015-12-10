@@ -11,8 +11,8 @@ $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
-
-$spacing-unit:     30px;
+$base-padding:     1em;
+$spacing-unit:     2em;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
@@ -23,12 +23,17 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1200px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+.section {
+    &:nth-child(2n+0) {
+        background-color: #999;
+    }
+    padding: $base-padding;
+}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
