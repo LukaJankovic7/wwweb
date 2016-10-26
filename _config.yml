@@ -16,6 +16,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://wwweb.design" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  wwwebdesign
+exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 # Build settings
 markdown: kramdown
