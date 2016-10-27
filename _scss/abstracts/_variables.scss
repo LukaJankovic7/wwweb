@@ -8,7 +8,12 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Nirmala UI', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack_semilight: 'Nirmala UI Semilight', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+$font-headings: 'Muller ExtraBold', 'Helvetica','Arial', sans-serif;
+$font-headings-thin: 'Muller Thin', 'Helvetica','Arial', sans-serif;
+
 
 /// Code (monospace) font family
 /// @type List
