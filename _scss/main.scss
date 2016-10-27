@@ -74,7 +74,12 @@ $on-laptop:        800px;
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/home-contact',
+  'pages/home-head',
+  'pages/home-our-expertise',
+  'pages/home-our-work',
+  'pages/home-blog';
 
 // 7. Themes
 @import
