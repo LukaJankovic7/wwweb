@@ -741,6 +741,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: #fff; }
+  @media (max-width: 768px) {
+    .section__head {
+      margin-bottom: 150px; } }
   .section__head:after {
     content: "";
     position: absolute;
@@ -756,7 +759,7 @@ body {
     content: "";
     position: absolute;
     z-index: 3;
-    top: 200px;
+    top: 20vw;
     right: -20px;
     bottom: -33%;
     left: -20px;
@@ -775,7 +778,7 @@ body {
   margin-bottom: 20px; }
   @media (max-width: 768px) {
     .head__logo {
-      width: 200px; } }
+      width: 150px; } }
   .head__logo svg {
     fill: currentColor; }
 
@@ -791,8 +794,8 @@ body {
   text-transform: uppercase; }
   @media (max-width: 768px) {
     .head__title {
-      font-size: 18px;
-      width: 200px; } }
+      font-size: 14px;
+      width: 150px; } }
 
 .head__shape--bottom-right {
   position: absolute;
@@ -841,7 +844,10 @@ body {
     color: #fff; }
 
 .section__our-work {
-  margin: 250px 0 200px 0; }
+  margin: 300px 0 200px 0; }
+  @media (max-width: 768px) {
+    .section__our-work {
+      margin: 150px 0 100px 0; } }
 
 .our-work__title {
   position: relative;
@@ -858,7 +864,11 @@ body {
   display: flex; }
 
 .project__slider {
-  width: 70%; }
+  width: 70%;
+  position: relative; }
+  @media (max-width: 768px) {
+    .project__slider {
+      width: 30%; } }
 
 .project__slide {
   position: relative;
@@ -869,8 +879,17 @@ body {
   -webkit-transform: rotate(-7.9deg) skew(-7.9deg);
           transform: rotate(-7.9deg) skew(-7.9deg);
   overflow: hidden;
-  opacity: 0.5; }
-  .project__slide.active {
+  opacity: 0.5;
+  right: -20px;
+  left: 0;
+  transition: 0.2s ease-in-out;
+  cursor: pointer; }
+  @media (max-width: 768px) {
+    .project__slide {
+      height: 150px; } }
+  .project__slide.hidden {
+    display: none; }
+  .project__slide:hover, .project__slide:focus, .project__slide.active {
     display: block;
     opacity: 1; }
   .project__slide:before {
@@ -878,7 +897,7 @@ body {
     position: absolute;
     z-index: 3;
     top: -50%;
-    right: 0;
+    right: -20px;
     left: 0;
     bottom: -50%;
     background-repeat: no-repeat;
@@ -891,6 +910,8 @@ body {
   .project__slide--2:before {
     background-image: url(../images/project.jpg); }
   .project__slide--3:before {
+    background-image: url(../images/project.jpg); }
+  .project__slide--4:before {
     background-image: url(../images/project.jpg); }
 
 .project__info-wrap {
@@ -906,17 +927,22 @@ body {
     content: "";
     position: absolute;
     z-index: 3;
-    top: 2.3vw;
-    right: -20px;
+    top: 2.6vw;
+    right: -0.9vw;
     bottom: 0;
     left: -20px;
     -webkit-transform: rotate(7.9deg) skew(7.9deg);
             transform: rotate(7.9deg) skew(7.9deg);
     background: #ccccff; }
+  @media (max-width: 768px) {
+    .project__info-wrap {
+      width: 80%;
+      top: -3.4vw;
+      right: 0vw;
+      bottom: -5vw; } }
 
 .project__info {
   display: none;
-  margin: 0 20px 0 50px;
   z-index: 20; }
   .project__info.active {
     display: block; }
@@ -925,11 +951,20 @@ body {
   font-family: "Muller ExtraBold", "Helvetica", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 37px;
-  color: #ec4c59; }
+  color: #ec4c59;
+  padding: 0 20px 0 50px; }
+  @media (max-width: 768px) {
+    .project__title {
+      font-size: 30px;
+      padding: 0 10px 0 25px; } }
 
 .project__description {
   font-size: 23px;
-  padding-right: 50px; }
+  padding: 0 20px 0 50px; }
+  @media (max-width: 768px) {
+    .project__description {
+      font-size: 15px;
+      padding: 0 10px 0 25px; } }
 
 .project__cta {
   display: block;
@@ -939,13 +974,18 @@ body {
   font-size: 23px;
   color: #fff;
   text-align: center; }
+  @media (max-width: 768px) {
+    .project__cta {
+      font-size: 14px; } }
+  .project__cta:visited {
+    color: #fff; }
   .project__cta:after {
     content: "";
     position: absolute;
     z-index: -1;
-    top: -80px;
-    right: 30px;
-    bottom: -82px;
+    top: -8vw;
+    right: -1vw;
+    bottom: -7.1vw;
     left: -55px;
     -webkit-transform: rotate(-7.9deg) skew(-7.9deg);
             transform: rotate(-7.9deg) skew(-7.9deg);

@@ -1,5 +1,9 @@
 .section__our-work {
-    margin: 250px 0 200px 0;
+    margin: 300px 0 200px 0;
+
+    @include respond-to('medium') {
+           margin: 150px 0 100px 0;
+        }
 }
 
 .our-work {
@@ -22,6 +26,11 @@
 .project {
     &__slider {
         width: 70%;
+        position: relative ;
+
+        @include respond-to('medium') {
+            width: 30%;
+        }
     }
 
     &__slide {
@@ -33,7 +42,21 @@
         transform: rotate(-7.9deg) skew(-7.9deg);
         overflow: hidden;
         opacity: 0.5;
+        right: -20px;
+        left: 0;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
 
+        @include respond-to('medium') {
+            height: 150px;
+        }
+
+        &.hidden {
+            display: none;
+        }
+
+        &:hover,
+        &:focus,
         &.active {
             display: block;
             opacity: 1;
@@ -44,7 +67,7 @@
             position: absolute;
             z-index: 3;
             top: -50%;
-            right: 0;
+            right: -20px;
             left: 0;
             bottom: -50%;
             background-repeat: no-repeat;
@@ -71,6 +94,12 @@
             }
         }
 
+         &--4 {
+            &:before {
+                background-image: url(../images/project.jpg);
+            }
+        }
+
     }
 
     &__info-wrap {
@@ -84,18 +113,24 @@
             content: "";
             position: absolute;
             z-index: 3;
-            top: 2.3vw;
-            right: -20px;
+            top: 2.6vw;
+            right: -0.9vw;
             bottom: 0;
             left: -20px;
             transform: rotate(7.9deg) skew(7.9deg);
             background: #ccccff;
         }
+
+        @include respond-to('medium') {
+            width: 80%;
+            top: -3.4vw;
+            right: 0vw;
+            bottom: -5vw;
+        }
     }
 
     &__info {
         display: none;
-        margin: 0 20px 0 50px;
         z-index: 20;
 
         &.active {
@@ -108,11 +143,22 @@
         text-transform: uppercase;
         font-size: 37px;
         color: $primary-color;
+        padding: 0 20px 0 50px;
+
+        @include respond-to('medium') {
+            font-size: 30px;
+            padding: 0 10px 0 25px;
+        }
     }
 
     &__description {
         font-size: 23px;
-        padding-right: 50px;
+        padding: 0 20px 0 50px;
+
+        @include respond-to('medium') {
+            font-size: 15px;
+            padding: 0 10px 0 25px;
+        }
     }
 
     &__cta {
@@ -124,13 +170,22 @@
         color: #fff;
         text-align: center;
 
+        @include respond-to('medium') {
+            font-size: 14px;
+        }
+
+        &:visited {
+            color: #fff;
+        }
+
+
         &:after {
             content: "";
             position: absolute;
             z-index: -1;
-            top: -80px;
-            right: 30px;
-            bottom: -82px;
+            top: -8vw;
+            right: -1vw;
+            bottom: -7.1vw;
             left: -55px;
             transform: rotate(-7.9deg) skew(-7.9deg);
             background: linear-gradient(45deg, #ec7559 0%, #ec4c59 100%);
