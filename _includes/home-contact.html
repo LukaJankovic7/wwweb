@@ -1,3 +1,35 @@
 <section class="section section__contact">
+    <h1 class="contact__title">Contact Us</h1>
+    <div class="contact">
+        <form class="contact__form ac-custom ac-checkbox ac-boxfill" action="https://formspree.io/info@wwweb.design"
+        method="POST">
+            <div class="contact__left">
+                    <figure class="contact__background"></figure>
+                
+                    <p>Hi, my name is</p>
+                    <input id="name" type="text" name="name" placeholder="enter your name" minlength="2" maxlength="20">
 
+                    <p>and I'm looking for:</p>
+                    <ul>
+						<li><input id="new-website" name="New Website" type="checkbox"><label for="new-website">a new Website / site redesign</label></li>
+						<li><input id="ios-android-app" name="IOS/Android App" type="checkbox"><label for="ios-android-app">IOS/Android app</label></li>
+						<li><input id="web-dev" name="web-dev" type="checkbox"><label for="web-dev">some dev work</label></li>
+						<li><input id="wordpress" name="wordpress" type="checkbox"><label for="wordpress">wordpress work</label></li>
+						<li><input id="marketing-seo" name="marketing/seo" type="checkbox"><label for="marketing-seo">marketing/seo</label></li>
+					</ul>
+               
+                    <p>Here is my email for you to contact me</p>
+                    <input id="email" type="email" placeholder="enter your email" name="_replyto">
+                    <p>Also I want to know if you</p>
+                    <textarea placeholder="enter your message"></textarea>
+                
+            </div>
+            <div class="contact__right">
+                <div class="contact__right__overlay"></div>
+                <div class="contact__submit">
+                    <input class="contact__submit__input" type="submit" value="Send">
+                </div>
+            </div>
+        </form>
+    </div>
 </section>

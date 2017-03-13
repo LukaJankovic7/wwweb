@@ -727,6 +727,235 @@ body {
   position: absolute;
   width: 1px; }
 
+.section__contact {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 200px 0 200px 0;
+  font-family: "Nirmala UI Semilight", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 22px;
+  color: #fff;
+  position: relative; }
+
+.contact {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  /* General SVG and path styles */
+  /* Specific input, SVG and path styles */
+  /* Box Fill */ }
+  .contact:before, .contact:after {
+    content: "";
+    background: #fff;
+    -webkit-transform: skew(12deg) rotate(12deg);
+    transform: skew(-7deg) rotate(-9deg);
+    position: absolute;
+    height: 20vw;
+    width: 100%;
+    z-index: 6; }
+  .contact:before {
+    bottom: 90%; }
+  .contact:after {
+    top: 90%; }
+  .contact__title {
+    position: absolute;
+    top: 5vw;
+    z-index: 15;
+    font-family: "Muller ExtraBold", "Helvetica", "Arial", sans-serif;
+    font-size: 6vw;
+    color: #662d91;
+    margin-left: 50px;
+    text-transform: uppercase; }
+  .contact__background {
+    background-image: url(../images/question-mark.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 90vw;
+    position: absolute;
+    top: 0;
+    right: -5vw;
+    z-index: 5; }
+  .contact input:-webkit-autofill,
+  .contact input:-webkit-autofill:hover,
+  .contact input:-webkit-autofill:focus input:-webkit-autofill,
+  .contact textarea:-webkit-autofill,
+  .contact textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+  .contact select:-webkit-autofill,
+  .contact select:-webkit-autofill:hover,
+  .contact select:-webkit-autofill:focus {
+    border-bottom: 1px dashed #fff;
+    -webkit-box-shadow: none;
+    background: transparent;
+    transition: background-color 5000s ease-in-out 0s;
+    color: #fff !important; }
+  .contact ul {
+    position: relative;
+    z-index: 10;
+    list-style: none;
+    width: 100%;
+    margin-bottom: 20px; }
+  .contact__form li {
+    margin: 0 auto;
+    padding: 0.7em 0;
+    position: relative; }
+  .contact__form label {
+    display: inline-block;
+    position: relative;
+    font-size: 1.2em;
+    padding: 5px 0 0 80px;
+    vertical-align: top;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: color 0.3s;
+    text-transform: uppercase; }
+  .contact__form input[type="checkbox"],
+  .contact__form label::before {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 0;
+    margin-top: -15px;
+    position: absolute;
+    cursor: pointer; }
+  .contact__form input[type="checkbox"] {
+    opacity: 0;
+    -webkit-appearance: none;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 100; }
+  .contact__form label::before {
+    content: '';
+    border: 2px solid #fff;
+    transition: opacity 0.3s;
+    -webkit-transform: rotate(68deg);
+            transform: rotate(68deg); }
+  .contact__form input[type="checkbox"]:checked + label,
+  .contact__form input[type="radio"]:checked + label {
+    color: #fff; }
+  .contact__form input[type="checkbox"]:checked + label::before,
+  .contact__form input[type="radio"]:checked + label::before {
+    opacity: 0.8; }
+  .contact__form svg {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    margin-top: -10px;
+    left: 5px;
+    pointer-events: none;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  .contact__form svg path {
+    stroke: #fdfcd3;
+    stroke-width: 13px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none; }
+  .contact .ac-boxfill svg path {
+    stroke-width: 8px; }
+  .contact label {
+    display: inline-block; }
+  .contact input,
+  .contact textarea {
+    width: auto;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px dashed #fff;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 24px;
+    position: relative;
+    z-index: 10; }
+  .contact p {
+    margin-top: 20px;
+    font-size: 1.2em;
+    width: 100%;
+    position: relative;
+    z-index: 10; }
+  .contact ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: white;
+    font-style: italic; }
+  .contact ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white;
+    font-style: italic; }
+  .contact :-ms-input-placeholder {
+    /* IE 10+ */
+    color: white;
+    font-style: italic; }
+  .contact :-moz-placeholder {
+    /* Firefox 18- */
+    color: white;
+    font-style: italic; }
+  .contact__form {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex; }
+  .contact__left {
+    overflow: hidden;
+    position: relative;
+    padding: 50px;
+    padding-top: 17vw;
+    padding-bottom: 10vw;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 55%;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2) 1px, transparent 1px, transparent 100%);
+    background-size: 10px 10px;
+    background-color: #9933cc; }
+  .contact__right {
+    position: relative;
+    width: 45%;
+    background: url(../images/contact-background.jpg) no-repeat center;
+    background-size: cover; }
+    .contact__right__overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(255, 176, 0, 0.62);
+      z-index: 2; }
+    .contact__right .contact__submit {
+      position: absolute;
+      bottom: 20%;
+      left: 0;
+      font-family: "Muller ExtraBold", "Helvetica", "Arial", sans-serif;
+      border: 0;
+      width: 60%;
+      display: block;
+      z-index: 5; }
+      .contact__right .contact__submit:before {
+        content: "";
+        top: -30px;
+        right: -20px;
+        left: -10px;
+        bottom: 8px;
+        position: absolute;
+        -webkit-transform: rotate(60deg);
+        transform: rotate(-11deg) skew(-11deg);
+        background: #ec4c59;
+        z-index: 1;
+        transition: 0.3s ease-in-out; }
+      .contact__right .contact__submit:hover:before {
+        -webkit-transform: none;
+                transform: none;
+        left: 0; }
+      .contact__right .contact__submit__input {
+        border: 0;
+        text-transform: uppercase;
+        font-size: 37px; }
+
 .section__head {
   position: relative;
   min-height: 42vw;
