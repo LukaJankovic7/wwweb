@@ -754,9 +754,17 @@ body {
     width: 100%;
     z-index: 6; }
   .contact:before {
-    bottom: 90%; }
+    bottom: 88%; }
+    @media (max-width: 1023px) {
+      .contact:before {
+        bottom: 95%;
+        min-height: 180px; } }
   .contact:after {
-    top: 90%; }
+    top: 88%; }
+    @media (max-width: 1023px) {
+      .contact:after {
+        top: 96%;
+        min-height: 180px; } }
   .contact__title {
     position: absolute;
     top: 5vw;
@@ -777,6 +785,10 @@ body {
     top: 0;
     right: -5vw;
     z-index: 5; }
+    @media (max-width: 1023px) {
+      .contact__background {
+        right: 0;
+        height: 100%; } }
   .contact input:-webkit-autofill,
   .contact input:-webkit-autofill:hover,
   .contact input:-webkit-autofill:focus input:-webkit-autofill,
@@ -896,6 +908,10 @@ body {
     width: 100%;
     display: -ms-flexbox;
     display: flex; }
+    @media (max-width: 1023px) {
+      .contact__form {
+        -ms-flex-direction: column;
+            flex-direction: column; } }
   .contact__left {
     overflow: hidden;
     position: relative;
@@ -913,6 +929,11 @@ body {
     background-image: repeating-radial-gradient(center center, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2) 1px, transparent 1px, transparent 100%);
     background-size: 10px 10px;
     background-color: #9933cc; }
+    @media (max-width: 1023px) {
+      .contact__left {
+        width: 100%;
+        padding-top: 22vw;
+        font-size: 16px; } }
   .contact__right {
     position: relative;
     width: 45%;
@@ -955,6 +976,10 @@ body {
         border: 0;
         text-transform: uppercase;
         font-size: 37px; }
+    @media (max-width: 1023px) {
+      .contact__right {
+        width: 100%;
+        height: 300px; } }
 
 .section__head {
   position: relative;
@@ -1104,7 +1129,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 210px;
+  height: 15vw;
   -webkit-transform: rotate(-7.9deg) skew(-7.9deg);
           transform: rotate(-7.9deg) skew(-7.9deg);
   overflow: hidden;
