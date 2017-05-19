@@ -1,6 +1,6 @@
 .section__contact {
     display: flex;
-    margin: 200px 0 200px 0;
+    margin: 150px 0 100px 0;
     font-family: $text-font-stack_semilight;
     font-size: 22px;
     color: #fff;
@@ -25,7 +25,8 @@
     }
 
     &:before {
-        bottom: 88%;
+        height: 14vw;
+        bottom: 94%;
         
         @media(max-width: 1023px) {
            bottom: 95%;

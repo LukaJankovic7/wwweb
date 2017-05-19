@@ -1,0 +1,119 @@
+.section__our-expertise {
+    position: relative;
+    min-height: 42vw;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+
+    @include respond-to('medium') {
+           margin-bottom: 150px;
+        }
+
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        right: -20px;
+        bottom: 0;
+        left: -20px;
+        transform: rotate(7deg) skew(7.9deg);
+        background: linear-gradient(45deg, #9933cc 0%,#7175cc 100%);
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        top: -100px;
+        height: 200px;
+        right: -20px;
+        left: -20px;
+        transform: rotate(-7deg) skew(-7.9deg);
+        background: #ec4c59;
+    }
+}
+
+.our-expertise {
+    position: relative;
+    &__title {
+        position: absolute;
+        top: -7vw;
+        right: 40px;
+        z-index: 15;
+        font-family: "Muller ExtraBold", "Helvetica", "Arial", sans-serif;
+        font-size: 6vw;
+        color: #fff;
+        margin-left: 50px;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        position: relative;
+        list-style: none;
+        z-index: 10;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        .expertise-item {
+            width: 33%;
+            margin-bottom: 100px;
+            text-align: center;
+
+             @media (max-width: 570px) {
+                width:100%;
+                 margin-bottom: 40px;
+                }
+
+            &__image {
+                background: #000;
+                transform: skew(-7deg) rotate(-6deg);
+                max-width: 380px;
+                width: 80%;
+                margin: 0 auto;
+                overflow: hidden;
+                height: 180px;
+                transition: 0.3s ease-in-out;
+                position: relative;
+
+                &:hover {
+                    transform: skew(-7deg) rotate(-6deg) translateY(30px);
+
+                    svg {
+                        transform: skew(6deg) rotate(6deg) translateY(-30px);
+                    }
+                }
+
+                @media (max-width: 1024px) {
+                    height: 90px;
+                }
+            }
+
+            &__image svg {
+                position: relative;
+                width: 200px;
+                height: auto;
+                fill: #febc2a;
+                transform: skew(6deg) rotate(6deg);
+                transition: 0.3s ease-in-out;
+
+                @media (max-width: 1024px) {
+                    width: 100px;
+                }
+            }
+
+            &__title {
+                text-transform: uppercase;
+                margin-top: 35px;
+            }
+        }
+    }
+}
