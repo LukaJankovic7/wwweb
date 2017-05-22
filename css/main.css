@@ -732,23 +732,13 @@ body {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  padding: 30px; }
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 30px;
+  -ms-flex-direction: column;
+      flex-direction: column; }
   .site-footer__logo svg {
     width: 200px; }
-  .site-footer__nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-left: 50px;
-    display: -ms-flexbox;
-    display: flex; }
-    .site-footer__nav__menu-item {
-      margin-right: 20px;
-      text-transform: uppercase; }
-      .site-footer__nav__menu-item a {
-        color: #000; }
 
 .section__contact {
   display: -ms-flexbox;
@@ -777,8 +767,8 @@ body {
     width: 100%;
     z-index: 6; }
   .contact:before {
-    height: 14vw;
-    bottom: 94%; }
+    height: 18vw;
+    bottom: 88%; }
     @media (max-width: 1023px) {
       .contact:before {
         bottom: 95%;
@@ -1090,7 +1080,7 @@ body {
   position: absolute;
   z-index: 20;
   right: 0;
-  top: -160px;
+  top: -180px;
   width: 220px;
   list-style-type: none;
   padding: 120px 30px 30px 30px; }
@@ -1112,7 +1102,6 @@ body {
     color: #000;
     display: block;
     text-align: right;
-    text-transform: uppercase;
     font-size: 15px;
     line-height: 17px;
     font-family: "Nirmala UI Semilight", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
@@ -1124,9 +1113,9 @@ body {
 .section__our-expertise {
   position: relative;
   min-height: 42vw;
-  margin-top: 250px;
+  margin-top: 48vw;
   margin-bottom: 250px;
-  padding: 150px 0;
+  padding: 16vw 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1135,7 +1124,8 @@ body {
       align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  color: #fff; }
+  color: #fff;
+  z-index: 100; }
   @media (max-width: 768px) {
     .section__our-expertise {
       margin-bottom: 150px; } }
