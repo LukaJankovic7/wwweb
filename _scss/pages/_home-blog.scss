@@ -6,8 +6,8 @@
     flex-wrap: wrap;
     width: 110vw;
     height: 70vw;
-    margin-top: 200px;
-    margin-bottom: 1350px;
+    margin-top: 30vw;
+    margin-bottom: 30vw;
     color: #fff;
     z-index: 100;
     margin-left: -5%;
@@ -16,7 +16,7 @@
     &:before {
         content: "";
         position: absolute;
-        top: -50px;
+        top: -5vw;
         height: 25vw;
         right: -20px;
         bottom: -33%;
@@ -129,7 +129,7 @@
 
     &__doubleBox {
         height: 12.5vw;
-        width: 75vw;
+        width: 76vw;
         margin-right: -7px;
         position: relative;
     }
@@ -147,7 +147,7 @@
 
     &__yellowBox {
         height: 100%;
-        width: 40vw;
+        width: 41vw;
         background-color: #FEBC2A;
         display: inline-block;
         position: relative;
@@ -155,11 +155,11 @@
 
     &__purpleBox-rightBottom {
         position: absolute;
-        bottom: -4%;
+        bottom: -4.1%;
         right: 0;
         height: 12.5vw;
         width: 35vw;
-        transform: rotate(14deg) skew(14.8deg);
+        transform: rotate(14.5deg) skew(14.8deg);
         background-image: linear-gradient(to right, rgb(113, 117, 204), rgb(153, 51, 204));
         mix-blend-mode: multiply;
 
