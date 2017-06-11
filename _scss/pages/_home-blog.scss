@@ -155,10 +155,10 @@
 
     &__purpleBox-rightBottom {
         position: absolute;
-        bottom: -4.1%;
+        bottom: 22%;
         right: 0;
         height: 12.5vw;
-        width: 35vw;
+        width: 36vw;
         transform: rotate(14.5deg) skew(14.8deg);
         background-image: linear-gradient(to right, rgb(113, 117, 204), rgb(153, 51, 204));
         mix-blend-mode: multiply;
@@ -166,6 +166,17 @@
         @include respond-to('large') {
            margin-right: -3px;
         }
+    }
+
+    &__bottomBoxFix {
+        position: relative;
+        width: 35vw;
+        display: inline-block;
+        mix-blend-mode: multiply;
+        height: 22vw;
+        margin-right: -7px;
+        margin-bottom: -6vw;
+        overflow: hidden;
     }
 
     &__redCover {

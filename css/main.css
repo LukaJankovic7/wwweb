@@ -1509,10 +1509,10 @@ body {
     position: relative; }
   .section__blog__purpleBox-rightBottom {
     position: absolute;
-    bottom: -4.1%;
+    bottom: 22%;
     right: 0;
     height: 12.5vw;
-    width: 35vw;
+    width: 36vw;
     -webkit-transform: rotate(14.5deg) skew(14.8deg);
             transform: rotate(14.5deg) skew(14.8deg);
     background-image: linear-gradient(to right, #7175cc, #9933cc);
@@ -1520,6 +1520,15 @@ body {
     @media (max-width: 1024px) {
       .section__blog__purpleBox-rightBottom {
         margin-right: -3px; } }
+  .section__blog__bottomBoxFix {
+    position: relative;
+    width: 35vw;
+    display: inline-block;
+    mix-blend-mode: multiply;
+    height: 22vw;
+    margin-right: -7px;
+    margin-bottom: -6vw;
+    overflow: hidden; }
   .section__blog__redCover {
     height: 100%;
     width: 100%;
