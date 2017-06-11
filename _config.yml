@@ -1,0 +1,18 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: WWWeb Design
+email: info@wwweb.design
+description: > # this means to ignore newlines until "baseurl:"
+  Websites just as you imagine them.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://wwweb.design" # the base hostname & protocol for your site
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+# Build settings
+markdown: kramdown

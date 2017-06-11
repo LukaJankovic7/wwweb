@@ -1,0 +1,323 @@
+.section__contact {
+    display: flex;
+    margin: 150px 0 100px 0;
+    font-family: $text-font-stack_semilight;
+    font-size: 22px;
+    color: #fff;
+    position: relative;
+   
+}
+
+.contact {
+    display: flex;
+    width: 100%;
+    position: relative;
+    &:before,
+    &:after {
+        content: "";
+        background: #fff;
+        -webkit-transform: skew(12deg) rotate(12deg);
+        transform: skew(-7deg) rotate(-9deg);
+        position: absolute;
+        height: 20vw;
+        width: 100%;
+        z-index: 6;
+    }
+
+    &:before {
+        height: 18vw;
+        bottom: 88%;
+        
+        @media(max-width: 1023px) {
+           bottom: 95%;
+           min-height: 180px;
+        }
+    }
+
+    &:after {
+        top: 88%;
+
+        
+        @media(max-width: 1023px) {
+           top: 96%;
+           min-height: 180px;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: 5vw;
+        z-index: 15;
+        font-family: "Muller ExtraBold", "Helvetica", "Arial", sans-serif;
+        font-size: 6vw;
+        color: #662d91;
+        margin-left: 50px;
+        text-transform: uppercase;
+    }
+
+    &__background {
+        background-image: url(../images/question-mark.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 90vw;
+        position: absolute;
+        top: 0;
+        right: -5vw;
+        z-index: 5;
+
+        
+        @media(max-width: 1023px) {
+           right: 0;
+           height: 100%;
+        }
+    }
+    
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus
+    input:-webkit-autofill, 
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+    border-bottom: 1px dashed #fff;
+    -webkit-box-shadow: none;
+    background: transparent;
+    transition: background-color 5000s ease-in-out 0s;
+    color: #fff !important;
+    }
+    ul {
+        position: relative;
+        z-index: 10;
+        list-style: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    &__form li {
+        margin: 0 auto;
+        padding: 0.7em 0;
+        position: relative;
+    }
+
+    &__form label {
+        display: inline-block;
+        position: relative;
+        font-size: 1.2em;
+        padding: 5px 0 0 80px;
+        vertical-align: top;
+        color: rgba(255,255,255,0.6);
+        cursor: pointer;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s;
+        text-transform: uppercase;
+
+    }
+
+    &__form input[type="checkbox"],
+    &__form label::before {
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        left: 0;
+        margin-top: -15px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    &__form input[type="checkbox"] {
+        opacity: 0;
+        -webkit-appearance: none;
+        display: inline-block;
+        vertical-align: middle;
+        z-index: 100;
+    }
+
+    &__form label::before {
+        content: '';
+       border: 2px solid #fff;
+        transition: opacity 0.3s;
+        transform: rotate(68deg);
+    }
+
+    &__form input[type="checkbox"]:checked + label,
+    &__form input[type="radio"]:checked + label {
+        color: #fff;
+    }
+
+    &__form input[type="checkbox"]:checked + label::before,
+    &__form input[type="radio"]:checked + label::before {
+        opacity: 0.8;
+    }
+
+    /* General SVG and path styles */
+
+    &__form svg {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        margin-top: -10px;
+        left: 5px;
+        pointer-events: none;
+        transform: rotate(-45deg);
+    }
+
+    &__form svg path {
+        stroke: #fdfcd3;
+        stroke-width: 13px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+    }
+
+    /* Specific input, SVG and path styles */
+
+
+    /* Box Fill */
+    .ac-boxfill svg path {
+        stroke-width: 8px;
+    } 
+
+
+    label {
+        display: inline-block;
+    }
+    input,
+    textarea {
+        width: auto;
+        background: transparent;
+        outline: 0;
+        border: 0;
+        border-bottom: 1px dashed #fff;
+        display:inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 24px;
+          position: relative;
+        z-index: 10;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 1.2em;
+        width: 100%;
+        position: relative;
+        z-index: 10;
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: white;
+        font-style: italic;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: white;
+        font-style: italic;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: white;
+        font-style: italic;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        color: white;
+        font-style: italic;
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        
+        @media(max-width: 1023px) {
+           flex-direction: column;
+        }
+    }
+
+    &__left {
+        overflow: hidden;
+        position: relative;
+        padding: 50px;
+        padding-top: 17vw;
+        padding-bottom: 10vw;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 55%;
+        background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.2), rgba(255,255,255,.2) 1px, transparent 1px, transparent 100%);
+        background-image: -moz-repeating-radial-gradient(center center, rgba(255,255,255,.2), rgba(255,255,255,.2) 1px, transparent 1px, transparent 100%);
+        background-image: -ms-repeating-radial-gradient(center center, rgba(255,255,255,.2), rgba(255,255,255,.2) 1px, transparent 1px, transparent 100%);
+        background-image: repeating-radial-gradient(center center, rgba(255,255,255,.4), rgba(255,255,255,.2) 1px, transparent 1px, transparent 100%);
+        -webkit-background-size: 3px 3px;
+        -moz-background-size: 3px 3px;
+        background-size: 10px 10px;
+        background-color: #9933cc;
+
+        @media(max-width: 1023px) {
+            width: 100%;
+            padding-top: 22vw;
+            font-size: 16px;
+        }
+    }
+
+    &__right {
+        position: relative;
+        width: 45%;
+        background: url(../images/contact-background.jpg) no-repeat center;
+        background-size: cover;
+
+        &__overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(255, 176, 0, 0.62);
+            z-index: 2;
+        }
+
+        .contact__submit {
+            position: absolute;
+            bottom: 20%;
+            left: 0;
+            font-family: $font-headings;
+            border: 0;
+            width: 60%;
+            display: block;
+            z-index: 5;
+            &:before {
+                content: "";
+                top: -30px;
+                right: -20px;
+                left: -10px;
+                bottom: 8px;
+                position: absolute;
+                -webkit-transform: rotate(60deg);
+                transform: rotate(-11deg) skew(-11deg);
+                background: #ec4c59;
+                z-index: 1;
+                transition: 0.3s ease-in-out;
+            }
+
+            &:hover {
+                &:before {
+                    transform: none;
+                    left: 0;
+                }
+            }
+
+            &__input {
+                border: 0;
+                text-transform: uppercase;
+                font-size: 37px;
+            }
+        }
+         @media(max-width: 1023px) {
+            width: 100%;
+            height: 300px;
+        }
+    }
+}

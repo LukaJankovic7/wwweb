@@ -1,0 +1,178 @@
+.section__blog{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 110vw;
+    height: 70vw;
+    margin-top: 200px;
+    margin-bottom: 1350px;
+    color: #fff;
+    z-index: 100;
+    margin-left: -5%;
+    transform: rotate(-7deg) skew(-7.9deg);
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        height: 25vw;
+        right: -20px;
+        bottom: -33%;
+        z-index: -3;
+        left: -20px;
+        transform: rotate(14deg) skew(14.8deg);
+        background-color: #FEBC2A;
+    } 
+
+    &__title {
+        position: absolute;
+        top: -8vw;
+        left: 0;
+        z-index: 15;
+        font-size: 6vw;
+        color: #fff;
+        margin-left: 100px;
+        text-transform: uppercase;
+        transform: rotate(7deg) skew(7.9deg);
+        font-family: $font-headings;
+
+        
+    }
+
+    &__subtitle {
+        z-index: 15;
+        font-size: 4vw;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        transform: rotate(7deg) skew(7.9deg);
+        font-family: $text-font-stack;
+        margin-top: -15vw;
+
+        &-blog {
+            position: absolute;
+            left: 0;
+            top: 25%;
+            margin-top:0;
+        }
+
+        @include respond-to('medium') {
+           font-size: 5vw;
+        }
+    }
+
+
+    &__boxes {
+        z-index: 6;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 10.3vw;
+        background-image: linear-gradient(to right, rgba(153, 51, 204, 0.7), rgba(113, 117, 204, 0.7)), url(../images/penguins.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__purpleBox-left {
+        position: absolute;
+        z-index: 5;
+        bottom: 45%;
+        left: 0;
+        margin-left: -5px;
+        height: 13vw;
+        width: 35vw;
+        transform: rotate(14deg) skew(14.8deg);
+        background-image: linear-gradient(to right, rgb(113, 117, 204), rgb(153, 51, 204));
+        mix-blend-mode: multiply;
+    }
+    
+    &__redBox-left {
+        position: absolute;
+        z-index: 5;
+        bottom: 0;
+        left: 0;
+        margin-left: -5px;
+        height: 15vw;
+        width: 25vw;
+        background-color: rgb(236, 76, 89);
+        mix-blend-mode: multiply;
+    }
+
+    &__purpleBox-top {
+        z-index: 5;
+        margin-right: 34.7vw;
+        height: 15vw;
+        width: 29vw;
+        transform: rotate(14deg) skew(15.8deg);
+        background-image: linear-gradient(to right, rgb(113, 117, 204), rgb(153, 51, 204));
+        margin-top: -4vw;
+        margin-bottom: 4vw;
+        mix-blend-mode: multiply;
+    }
+
+    &__redBox-right {
+        margin-right: -7px;
+        height: 18vw;
+        width: 35vw;
+        background-color: rgb(236, 76, 89);
+        mix-blend-mode: multiply;
+    }
+
+    &__doubleBox {
+        height: 12.5vw;
+        width: 75vw;
+        margin-right: -7px;
+        position: relative;
+    }
+
+    &__purpleBox-right {
+        height: 100%;
+        width: 35vw;
+        background-image: linear-gradient(to right, rgb(153, 51, 204), rgb(113, 117, 204));
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        mix-blend-mode: multiply;
+    }
+
+    &__yellowBox {
+        height: 100%;
+        width: 40vw;
+        background-color: #FEBC2A;
+        display: inline-block;
+        position: relative;
+    }
+
+    &__purpleBox-rightBottom {
+        position: absolute;
+        bottom: -4%;
+        right: 0;
+        height: 12.5vw;
+        width: 35vw;
+        transform: rotate(14deg) skew(14.8deg);
+        background-image: linear-gradient(to right, rgb(113, 117, 204), rgb(153, 51, 204));
+        mix-blend-mode: multiply;
+
+        @include respond-to('large') {
+           margin-right: -3px;
+        }
+    }
+
+    &__redCover {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
