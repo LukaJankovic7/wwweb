@@ -1387,6 +1387,9 @@ body {
   margin-left: -5%;
   -webkit-transform: rotate(-7deg) skew(-7.9deg);
           transform: rotate(-7deg) skew(-7.9deg); }
+  @media (max-width: 570px) {
+    .section__blog {
+      min-height: 110vw; } }
   .section__blog:before {
     content: "";
     position: absolute;
@@ -1448,6 +1451,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
+    @media (max-width: 570px) {
+      .section__blog__boxes {
+        padding-top: 27.3%; } }
   .section__blog__purpleBox-left {
     position: absolute;
     z-index: 5;
@@ -1460,6 +1466,9 @@ body {
             transform: rotate(14deg) skew(14.8deg);
     background-image: linear-gradient(to right, #7175cc, #9933cc);
     mix-blend-mode: multiply; }
+    @media (max-width: 570px) {
+      .section__blog__purpleBox-left {
+        height: 16vw; } }
   .section__blog__redBox-left {
     position: absolute;
     z-index: 5;
@@ -1470,6 +1479,9 @@ body {
     width: 25vw;
     background-color: #ec4c59;
     mix-blend-mode: multiply; }
+    @media (max-width: 570px) {
+      .section__blog__redBox-left {
+        height: 20vw; } }
   .section__blog__purpleBox-top {
     z-index: 5;
     margin-right: 34.7vw;
@@ -1487,11 +1499,17 @@ body {
     width: 35vw;
     background-color: #ec4c59;
     mix-blend-mode: multiply; }
+    @media (max-width: 570px) {
+      .section__blog__redBox-right {
+        height: 23vw; } }
   .section__blog__doubleBox {
     height: 12.5vw;
     width: 76vw;
     margin-right: -7px;
     position: relative; }
+    @media (max-width: 570px) {
+      .section__blog__doubleBox {
+        height: 13.5vw; } }
   .section__blog__purpleBox-right {
     height: 100%;
     width: 35vw;
@@ -1520,6 +1538,10 @@ body {
     @media (max-width: 1024px) {
       .section__blog__purpleBox-rightBottom {
         margin-right: -3px; } }
+    @media (max-width: 570px) {
+      .section__blog__purpleBox-rightBottom {
+        height: 15.5vw;
+        bottom: 8%; } }
   .section__blog__bottomBoxFix {
     position: relative;
     width: 35vw;
@@ -1529,6 +1551,9 @@ body {
     margin-right: -7px;
     margin-bottom: -6vw;
     overflow: hidden; }
+    @media (max-width: 570px) {
+      .section__blog__bottomBoxFix {
+        height: 41vw; } }
   .section__blog__redCover {
     height: 100%;
     width: 100%;

@@ -13,6 +13,10 @@
     margin-left: -5%;
     transform: rotate(-7deg) skew(-7.9deg);
 
+    @media (max-width:570px) {
+        min-height: 110vw;
+    }
+
     &:before {
         content: "";
         position: absolute;
@@ -80,7 +84,13 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+
+        @media (max-width:570px) {
+            padding-top: 27.3%;
+        }
     }
+
+    
 
     &__purpleBox-left {
         position: absolute;
@@ -93,6 +103,10 @@
         transform: rotate(14deg) skew(14.8deg);
         background-image: linear-gradient(to right, rgb(113, 117, 204), rgb(153, 51, 204));
         mix-blend-mode: multiply;
+
+        @media (max-width:570px) {
+            height: 16vw;
+        }
     }
     
     &__redBox-left {
@@ -105,6 +119,10 @@
         width: 25vw;
         background-color: rgb(236, 76, 89);
         mix-blend-mode: multiply;
+
+        @media (max-width:570px) {
+            height: 20vw;
+        }
     }
 
     &__purpleBox-top {
@@ -125,6 +143,10 @@
         width: 35vw;
         background-color: rgb(236, 76, 89);
         mix-blend-mode: multiply;
+
+        @media (max-width:570px) {
+           height: 23vw;
+        }
     }
 
     &__doubleBox {
@@ -132,6 +154,9 @@
         width: 76vw;
         margin-right: -7px;
         position: relative;
+        @media (max-width:570px) {
+            height: 13.5vw;
+        }
     }
 
     &__purpleBox-right {
@@ -166,6 +191,11 @@
         @include respond-to('large') {
            margin-right: -3px;
         }
+     
+        @media (max-width:570px) {
+            height: 15.5vw;
+            bottom: 8%;
+        }
     }
 
     &__bottomBoxFix {
@@ -177,6 +207,10 @@
         margin-right: -7px;
         margin-bottom: -6vw;
         overflow: hidden;
+
+        @media (max-width:570px) {
+            height: 41vw;
+        }
     }
 
     &__redCover {
